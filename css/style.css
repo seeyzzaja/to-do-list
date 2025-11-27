@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: rgba(255, 255, 255, 0.15);
+ 
+  -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header .logo {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ffd369;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* Konten utama */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background: rgba(255, 255, 255, 0.15);
+  
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.register {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+.login {
+  background: linear-gradient(135deg, #32d74b, #00c853);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

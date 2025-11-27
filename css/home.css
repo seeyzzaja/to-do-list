@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0f0f1a, #1b1b2f, #162447);
+  color: #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Card style */
+.todo, .hadits {
+  width: 45%;
+  background: #1f1f2e;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo:hover, .hadits:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #ff6f61; /* merah coral gelap */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Input & button */
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #222;
+  color: #eee;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #21e6c1; /* hijau neon */
+}
+
+button {
+  padding: 10px 15px;
+  background: #53354a; /* ungu gelap */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #903749; /* merah keunguan */
+}
+
+/* To-do list items */
+ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+li {
+  margin: 8px 0;
+  padding: 10px;
+  background: #162447;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+li:hover {
+  background: #1f4068;
+}
+
+li button {
+  background: #e43f5a;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+li button:hover {
+  background: #d63447;
+}
+
+/* Hadits container */
+.hadits-item {
+  margin-top: 15px;
+  padding: 15px;
+  background: #0f0f1a;
+  border-left: 4px solid #21e6c1;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hadits-item strong {
+  color: #21e6c1;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.hadits-item em {
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .todo, .hadits {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0f0f1a, #1b1b2f, #162447);
+  color: #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Card style */
+.todo, .hadits {
+  width: 45%;
+  background: #1f1f2e;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo:hover, .hadits:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #ff6f61; /* merah coral gelap */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Input & button */
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #222;
+  color: #eee;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #21e6c1; /* hijau neon */
+}
+
+button {
+  padding: 10px 15px;
+  background: #53354a; /* ungu gelap */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #903749; /* merah keunguan */
+}
+
+/* To-do list items */
+ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+li {
+  margin: 8px 0;
+  padding: 10px;
+  background: #162447;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+li:hover {
+  background: #1f4068;
+}
+
+li button {
+  background: #e43f5a;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+li button:hover {
+  background: #d63447;
+}
+
+/* Hadits container */
+.hadits-item {
+  margin-top: 15px;
+  padding: 15px;
+  background: #0f0f1a;
+  border-left: 4px solid #21e6c1;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hadits-item strong {
+  color: #21e6c1;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.hadits-item em {
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .todo, .hadits {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

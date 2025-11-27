@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini To-Do List + Random Hadits</title>
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+  <!-- To-Do List -->
+  <div class="todo">
+    <h2>📝 To-Do List</h2>
+    <input id="todoInput" type="text" placeholder="Tambah tugas..." />
+    <button onclick="addTodo()">Tambah</button>
+    <ul id="todoList"></ul>
+  </div>
+
+  <!-- Hadits API -->
+  <div class="hadits">
+    <h2>📖 Random Hadits Arbain</h2>
+    <button onclick="loadRandomHadits()">Ambil Hadits Random</button>
+    <div id="haditsContainer">Klik tombol untuk ambil hadits...</div>
+  </div>
+
+  <script src="../modules/home.js"></script>
+</body>
+</html>
